@@ -2,7 +2,7 @@
 Professor Jennifer Guler's Biology Lab of UVA
 
 Link to bedtools https://github.com/arq5x/bedtools
-
+Link to bedtools2 https://github.com/arq5x/bedtools2
 
 ## Task List
 
