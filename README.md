@@ -10,20 +10,20 @@ Link to Delly2 https://github.com/dellytools/delly
 ## Task List
 
 + Import DNA sequence reads and create consistent name conventions
-+ Currently ~150 genomes in fastq format
+Currently ~150 genomes in fastq format
 
 + Quality control on reads, FastQC
-+ Utilizes Java, Perl, and Shell
+Utilizes Java, Perl, and Shell
 
 + Align reads using BWA-MEM to create sam/bam files
-+ Recommended settings command is: bwa mem ref.fa read1.fq read2.fq > aln-pe.sam
-+ Utilizes C, C++, Java, Shell, Perl, makefile, other 
+Recommended settings command is: bwa mem ref.fa read1.fq read2.fq > aln-pe.sam
+Utilizes C, C++, Java, Shell, Perl, makefile, other 
 
 + Use CNVnator to analyze bam files
-+ Utilizes C++, PERL, makefile
+Utilizes C++, PERL, makefile
 
 + Use Delly2 to analyze bam files
-+ Utilizes C++ and makefile
+Utilizes C++ and makefile
 
 + Compare CNV breakpoint locations from CNVnator to locations from Delly2 and extract sequences at breakpoints for further analysis
 
