@@ -115,7 +115,12 @@ for( i in 1:nfiles ){
           OVER <- data.frame(matrix(temp, nrow = 1, ncol = 4))
           names(OVER) <- names(temp)
         } else {
-          OVER <- rbind(OVER, matrix(temp, nrow = 1, ncol = 4))
+          out_df <- data.frame(matrix(temp, nrow = 1, ncol = 4))
+          names(out_df) <- names(temp)
+          if( all.equal(names(OVER), names(out_df)) ){
+            print("Names verified to be equal ahead of rbind call")
+          }
+          OVER <- rbind(OVER, out_df)
         }
         
       }
