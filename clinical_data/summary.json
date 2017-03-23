@@ -1,0 +1,110 @@
+{
+  "KP062-BiooBarcode_15_ATGTCA_L005_R1_summary": [
+    {
+      "grade": "PASS",
+      "test": "Basic Statistics"
+    },
+    {
+      "grade": "PASS",
+      "test": "Per base sequence quality"
+    },
+    {
+      "grade": "WARN",
+      "test": "Per tile sequence quality"
+    },
+    {
+      "grade": "PASS",
+      "test": "Per sequence quality scores"
+    },
+    {
+      "grade": "WARN",
+      "test": "Per base sequence content"
+    },
+    {
+      "grade": "WARN",
+      "test": "Per sequence GC content"
+    },
+    {
+      "grade": "PASS",
+      "test": "Per base N content"
+    },
+    {
+      "grade": "PASS",
+      "test": "Sequence Length Distribution"
+    },
+    {
+      "grade": "PASS",
+      "test": "Sequence Duplication Levels"
+    },
+    {
+      "grade": "WARN",
+      "test": "Overrepresented sequences"
+    },
+    {
+      "grade": "PASS",
+      "test": "Adapter Content"
+    },
+    {
+      "grade": "FAIL",
+      "test": "Kmer Content"
+    }
+  ],
+  "KP062-BiooBarcode_15_ATGTCA_L005_R1_overrepresented": [
+    {
+      "Sequence": "GATCGGAAGAGCACACGTCTGAACTCCAGTCACATGTCAATCTCGTATGC",
+      "Count": "2471",
+      "Percentage": "0.132212355193763",
+      "Possible Source": "TruSeq Adapter, Index 15 (98% over 50bp)"
+    }
+  ],
+  "KP062-BiooBarcode_15_ATGTCA_L005_R2_summary": [
+    {
+      "grade": "PASS",
+      "test": "Basic Statistics"
+    },
+    {
+      "grade": "FAIL",
+      "test": "Per base sequence quality"
+    },
+    {
+      "grade": "FAIL",
+      "test": "Per tile sequence quality"
+    },
+    {
+      "grade": "PASS",
+      "test": "Per sequence quality scores"
+    },
+    {
+      "grade": "WARN",
+      "test": "Per base sequence content"
+    },
+    {
+      "grade": "FAIL",
+      "test": "Per sequence GC content"
+    },
+    {
+      "grade": "PASS",
+      "test": "Per base N content"
+    },
+    {
+      "grade": "PASS",
+      "test": "Sequence Length Distribution"
+    },
+    {
+      "grade": "PASS",
+      "test": "Sequence Duplication Levels"
+    },
+    {
+      "grade": "PASS",
+      "test": "Overrepresented sequences"
+    },
+    {
+      "grade": "PASS",
+      "test": "Adapter Content"
+    },
+    {
+      "grade": "FAIL",
+      "test": "Kmer Content"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+PASS	Basic Statistics	KP062-BiooBarcode_15_ATGTCA_L005_R2.fastq.gz
+FAIL	Per base sequence quality	KP062-BiooBarcode_15_ATGTCA_L005_R2.fastq.gz
+FAIL	Per tile sequence quality	KP062-BiooBarcode_15_ATGTCA_L005_R2.fastq.gz
+PASS	Per sequence quality scores	KP062-BiooBarcode_15_ATGTCA_L005_R2.fastq.gz
+WARN	Per base sequence content	KP062-BiooBarcode_15_ATGTCA_L005_R2.fastq.gz
+FAIL	Per sequence GC content	KP062-BiooBarcode_15_ATGTCA_L005_R2.fastq.gz
+PASS	Per base N content	KP062-BiooBarcode_15_ATGTCA_L005_R2.fastq.gz
+PASS	Sequence Length Distribution	KP062-BiooBarcode_15_ATGTCA_L005_R2.fastq.gz
+PASS	Sequence Duplication Levels	KP062-BiooBarcode_15_ATGTCA_L005_R2.fastq.gz
+PASS	Overrepresented sequences	KP062-BiooBarcode_15_ATGTCA_L005_R2.fastq.gz
+PASS	Adapter Content	KP062-BiooBarcode_15_ATGTCA_L005_R2.fastq.gz
+FAIL	Kmer Content	KP062-BiooBarcode_15_ATGTCA_L005_R2.fastq.gz
