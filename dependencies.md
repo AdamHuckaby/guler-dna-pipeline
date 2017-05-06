@@ -82,4 +82,4 @@ conda install --channel menpo opencv3
 
 ## Using the Anaconda Environment
 
-Now, whenever you are working on this project, make sure you are operating in the `(guler)` virtual environment. For example, if you are using RStudio, you will have to tweak the settings to get it to use Bioconda's vesion of R. When you are using the command like, make sure that you have activated the environment and `(guler)`
+Now, whenever you are working on this project, make sure you are operating in the `(guler)` virtual environment. For example, if you are using RStudio, you will have to tweak the settings to get it to use Bioconda's vesion of R. When you are using the command line, make sure that you have activated the environment and `(guler)` is prepended to the command line.
