@@ -1,5 +1,10 @@
-
+# Command-line only
 # Pass full path, possibly with tilde
+# e.g.
+# Rscript report_gen.R ~/Desktop/guler-lab/clinical_data/
+# Currently, _fastq.gz files are on Adam's machine locally
+# because they are too big for GitHub
+#
 args <- commandArgs(trailingOnly = TRUE)
 fastq_dir <- as.character(args[1])
 print(fastq_dir)
@@ -25,9 +30,7 @@ if( !all(c(length(fnames), length(fstem), length(fhtml)) == length(fzip)) ){
 nfiles <- length(fnames)
 
 for( i in 1:nfiles ){
-  
-  #OUT[[fstem[i]]] <- list()
-  
+
   fastq_call <- paste0("fastqc ", fnames[i])
   system(fastq_call)
   cat("\n\n##### FASTQC CALL COMPLETE #####\n\n")
@@ -39,15 +42,6 @@ for( i in 1:nfiles ){
   unzip_call <- paste0("unzip ", fzip[i])
   system(unzip_call)
   cat("\n\n##### UNZIP COMPLETE #####\n\n")
-
-  
-  #unzipped_exists <- sum(grepl(funzip[i] , list.files())) == 1
-  #if( !unzipped_exists ){
-  #  stop(paste0("Unzipped directory not generated for ", fnames[i]))
-  #} else {
-  #  cat("\n\n##### UNZIPPED DIRECTORY VERIFIED TO EXIST #####\n\n")
-  #}
-  
   
   html_exists <- sum(grepl(fhtml[i], list.files())) == 1
   if( !html_exists ){
@@ -132,8 +126,6 @@ for( i in 1:nfiles ){
     
     
   }
-  
-  
   
   json_obj <- toJSON(OUT, pretty = TRUE)
   writeLines(json_obj, 'summary.json')

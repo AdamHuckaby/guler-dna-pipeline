@@ -1,1 +1,9 @@
 **/*fastq.gz
+**/__pycache__/*
+**/*.pyc
+**/*.Rhistory
+**/*.project
+**/*.pydevproject
+**/.settings/*
+**/.metadata/*
+RemoteSystemsTempFiles/*

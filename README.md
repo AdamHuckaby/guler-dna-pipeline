@@ -1,34 +1,27 @@
-# guler-lab
-Professor Jennifer Guler's Biology Lab of UVA
+# guler-dna-pipeline
+DNA processing pipeline for Jennfier Guler's Biology Lab at UVA
 
-Link to bedtools https://github.com/arq5x/bedtools
-Link to bedtools2 https://github.com/arq5x/bedtools2
-Link to FastQC http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
-Link to BWA https://github.com/lh3/bwa
-Link to Delly2 https://github.com/dellytools/delly
+See `dependencies.md` for installation instructions. Repo supports 64-bit Linux and MacOS only.
 
 ## Task List
 
-+ Import DNA sequence reads and create consistent name conventions
-Currently ~150 genomes in fastq format
++ Import DNA sequence reads and create consistent name conventions. Currently ~150 genomes in fastq format. `report_gen.R` is our current best attempt at this. Works in sample `fastq.gz` files in this repository, but not all we have access to. The `fast.qz` files are stored on Adam's machine only at the moment.
 
-+ Quality control on reads, FastQC
-Utilizes Java, Perl, and Shell
++ Quality control on reads, FastQC.
 
-+ Align reads using BWA-MEM to create sam/bam files
-Recommended settings command is: bwa mem ref.fa read1.fq read2.fq > aln-pe.sam
-Utilizes C, C++, Java, Shell, Perl, makefile, other 
++ Align reads using BWA-MEM to create sam/bam files. Recommended settings command is: `bwa mem ref.fa read1.fq read2.fq > aln-pe.sam`
 
 + Use CNVnator to analyze bam files
-Utilizes C++, PERL, makefile
 
 + Use Delly2 to analyze bam files
-Utilizes C++ and makefile
 
 + Compare CNV breakpoint locations from CNVnator to locations from Delly2 and extract sequences at breakpoints for further analysis
 
-+ Organize directories to make OS/path-independent. Chris.
 
-+ Develop standard method of reading .bed files with data.table.
+### Collecting Data from `fastq.gz` Files
 
-+ Cut `bedtools` terminal command out of the picture.
+Given `clinical_data/` directory containing `.fastq.gz` files:  
+Rscript report_gen.R ~/Desktop/guler-lab/clinical_data/
+
+Make sure to use the absolute path to the directory.
+

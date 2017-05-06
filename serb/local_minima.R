@@ -1,3 +1,10 @@
+#
+# Experimental script developed by Adam
+# Requires output of another script in R environment. 
+# Ask Adam for clarification here and develop a proper reproducible example.
+#
+
+
 #read and name data
 data = SERBch1sighairpins59
 colnames(data) = c("cName","start","end","type","deltaG","strand")

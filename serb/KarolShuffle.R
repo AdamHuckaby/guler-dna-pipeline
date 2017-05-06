@@ -1,3 +1,9 @@
+#
+# Experimental script developed by Adam
+# Requires bedtools installed as a command line tool
+# See README.md for install instructions and dependencies for bedtools
+#
+
 library(data.table) ##load library that uses bedtools
 strt<-Sys.time() ##start the clock
 
